@@ -3,8 +3,12 @@ from django.http import HttpResponse
 
 
 def index(request) -> HttpResponse:
+    
     return HttpResponse(
-        "Hello, world. You're at the app index."
+        "<h1>Hello, world. You're at the app index.</h1>"
     )
 
-# Create your views here.
+def parrot(request, query) -> HttpResponse:
+    return HttpResponse(
+        "Your query was: " + query
+    )
