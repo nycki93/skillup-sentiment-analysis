@@ -1,3 +1,4 @@
-*.pdf
-*.csv
 .env
+*.csv
+*.pdf
+*.sqlite3
